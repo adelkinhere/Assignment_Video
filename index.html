@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prom?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom cursor -->
+    <div class="cursor"></div>
+
+    <!-- top anchor for "Main" navigation link -->
+    <div id="top"></div>
+    <header class="header">
+        <nav class="navbar">
+            <!-- custom scroll behavior for top link -->
+            <a href="#top" onclick="event.preventDefault(); window.scrollTo({ top: 0 });">Home</a>
+            <a href="#about">About</a>
+            <a href="#film">Film</a>
+            <a href="#explore">BTS</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About the Film</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    "Prom?" is an interactive short film that explores the pivotal moments of teenage life and the decisions that shape our future. Set against the backdrop of high school prom season, our protagonist faces choices that might seem small in the moment but have lasting consequences.
+                </p>
+                <p>
+                    This project was created as an experimental narrative that allows viewers to step into the shoes of our main character and make decisions that alter the storyline. Inspired by modern interactive cinema, we wanted to blur the lines between film and audience participation.
+                </p>
+                <p>
+                    The film was shot over two weekends with a dedicated student crew, using innovative techniques to create a seamless interactive experience. We hope you enjoy the journey and explore all possible paths and endings.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="/api/placeholder/500/350" alt="Behind the scenes of Prom?">
+            </div>
+        </div>
+    </section>
+
+    <!-- Film Section -->
+    <section id="film">
+        <h2>Watch the Film</h2>
+        <div class="video-container">
+            <video id="video-player" class="video-player" controls>
+                <source src="media/intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div id="choice-buttons-1" class="choice-buttons">
+                <button class="choice-btn" onclick="loadVideo('media/choice1A.mp4', 1)">Accept Invitation</button>
+                <button class="choice-btn" onclick="loadVideo('media/choice1B.mp4', 1)">Decline Invitation</button>
+            </div>
+            
+            <div id="choice-buttons-2" class="choice-buttons">
+                <button class="choice-btn" onclick="loadVideo('media/choice2A.mp4', 2)">Go to After Party</button>
+                <button class="choice-btn" onclick="loadVideo('media/choice2B.mp4', 2)">Go Home</button>
+            </div>
+            
+            <div id="navigation-buttons" class="navigation-buttons" style="display: none;">
+                <button id="back-btn" class="back-btn" onclick="goBack()">Go Back to Previous Scene</button>
+                <button id="restart-btn" class="restart-btn" style="display: none;" onclick="restartFilm()">Restart Film</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- BTS Section -->
+    <section id="explore">
+        <h2>Behind The Scenes</h2>
+        <div class="bts-container">
+            <video class="bts-video" controls>
+                <source src="media/bts.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="team-info">
+                <h3>Meet Our Team</h3>
+                <div class="team-member">
+                    <div class="member-name">Aigerim Shakanova</div>
+                    <div class="member-role">Director</div>
+                </div>
+                <div class="team-member">
+                    <div class="member-name">Linus Jiang</div>
+                    <div class="member-role">Cinematographer</div>
+                </div>
+                <div class="team-member">
+                    <div class="member-name">Adeliya Aitpayeva</div>
+                    <div class="member-role">Editor & Developer</div>
+                </div>
+                <div class="team-member">
+                    <div class="member-name">Ali Noor</div>
+                    <div class="member-role">Actor</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
