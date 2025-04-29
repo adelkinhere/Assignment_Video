@@ -19,6 +19,7 @@
             <a href="#about">About</a>
             <a href="#film">Film</a>
             <a href="#explore">BTS</a>
+            <a href="#team">Team</a>
         </nav>
     </header>
 
@@ -38,7 +39,7 @@
                 </p>
             </div>
             <div class="about-image">
-                <img src="/api/placeholder/500/350" alt="Behind the scenes of Prom?">
+                <img src="media/about.png" alt="Behind the scenes of Prom?">
             </div>
         </div>
     </section>
@@ -47,27 +48,28 @@
     <section id="film">
         <h2>Watch the Film</h2>
         <div class="video-container">
-            <video id="video-player" class="video-player" controls>
-                <source src="media/intro.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-player-container">
+                <div id="youtube-player"></div>
+            </div>
             
             <div id="choice-buttons-1" class="choice-buttons">
-                <button class="choice-btn" onclick="loadVideo('media/choice1A.mp4', 1)">Accept Invitation</button>
-                <button class="choice-btn" onclick="loadVideo('media/choice1B.mp4', 1)">Decline Invitation</button>
+                <button class="choice-btn" onclick="loadVideo('YOUTUBE_ID_FOR_CHOICE1A', 1)">Yes</button>
+                <button class="choice-btn" onclick="loadVideo('Jb-PkjbAhiY', 1)">No</button>
             </div>
             
             <div id="choice-buttons-2" class="choice-buttons">
-                <button class="choice-btn" onclick="loadVideo('media/choice2A.mp4', 2)">Go to After Party</button>
-                <button class="choice-btn" onclick="loadVideo('media/choice2B.mp4', 2)">Go Home</button>
+                <button class="choice-btn" onclick="loadVideo('YOUTUBE_ID_FOR_CHOICE2A', 2)">Yes</button>
+                <button class="choice-btn" onclick="loadVideo('YOUTUBE_ID_FOR_CHOICE2B', 2)">No</button>
             </div>
             
-            <div id="navigation-buttons" class="navigation-buttons" style="display: none;">
+            <div id="navigation-buttons" class="navigation-buttons">
                 <button id="back-btn" class="back-btn" onclick="goBack()">Go Back to Previous Scene</button>
                 <button id="restart-btn" class="restart-btn" style="display: none;" onclick="restartFilm()">Restart Film</button>
             </div>
         </div>
     </section>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
 
     <!-- BTS Section -->
     <section id="explore">
@@ -77,28 +79,76 @@
                 <source src="media/bts.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            
-            <div class="team-info">
-                <h3>Meet Our Team</h3>
-                <div class="team-member">
-                    <div class="member-name">Aigerim Shakanova</div>
-                    <div class="member-role">Director</div>
-                </div>
-                <div class="team-member">
-                    <div class="member-name">Linus Jiang</div>
-                    <div class="member-role">Cinematographer</div>
-                </div>
-                <div class="team-member">
-                    <div class="member-name">Adeliya Aitpayeva</div>
-                    <div class="member-role">Editor & Developer</div>
-                </div>
-                <div class="team-member">
-                    <div class="member-name">Ali Noor</div>
-                    <div class="member-role">Actor</div>
-                </div>
-            </div>
         </div>
     </section>
+
+        <!-- Team Section (New) -->
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member-card" onclick="expandTeamMember(0)">
+                    <img src="media/aigerim.png" alt="Aigerim Shakanova" class="team-member-image">
+                    <div class="team-member-info">
+                        <div>
+                            <div class="team-member-name">Aigerim Shakanova</div>
+                            <div class="team-member-role">Screenwriter</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Team Member 2 -->
+                <div class="team-member-card" onclick="expandTeamMember(1)">
+                    <img src="media/adeliya.jpg" alt="Adeliya Aitpayeva" class="team-member-image">
+                    <div class="team-member-info">
+                        <div>
+                            <div class="team-member-name">Adeliya Aitpayeva</div>
+                            <div class="team-member-role">Developer</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Team Member 3 -->
+                <div class="team-member-card" onclick="expandTeamMember(2)">
+                    <img src="media/ali.png" alt="Ali Noor" class="team-member-image">
+                    <div class="team-member-info">
+                        <div>
+                            <div class="team-member-name">Ali Noor</div>
+                            <div class="team-member-role">Actor + Editor</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Team Member 4 -->
+                <div class="team-member-card" onclick="expandTeamMember(3)">
+                    <img src="media/linuss.png" alt="Linus Jiang" class="team-member-image">
+                    <div class="team-member-info">
+                        <div>
+                            <div class="team-member-name">Linus Jiang</div>
+                            <div class="team-member-role">Cinematographer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Expanded Team Member Modal -->
+            <div id="team-expanded" class="team-member-expanded">
+                <div class="team-expanded-content">
+                    <img id="expanded-image" src="/api/placeholder/300/350" alt="Team member" class="expanded-image">
+                    <div class="expanded-info">
+                        <div id="expanded-name" class="expanded-name">Team Member Name</div>
+                        <div id="expanded-role" class="expanded-role">Role</div>
+                        <div id="expanded-bio" class="expanded-bio">Detailed biography goes here...</div>
+                        <div class="expanded-social">
+                            <div class="social-icon">🌐</div>
+                            <div class="social-icon">📷</div>
+                            <div class="social-icon">🎞️</div>
+                        </div>
+                    </div>
+                    <button class="expanded-close" onclick="closeExpandedView()">×</button>
+                </div>
+            </div>
+        </section> 
     <script src="script.js"></script>
 </body>
 </html>
