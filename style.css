@@ -49,10 +49,15 @@ nav a:hover {
     overflow: hidden;
     cursor: none;
     background-image: url(media/prom.png);
-    background-size: cover;
+    background-size: contain; /* Changed from 'cover' to 'contain' to preserve dimensions */
     background-position: center;
+    background-repeat: no-repeat; /* Prevent image from repeating */
     min-height: 100vh;
-    margin-left: 50px;
+    padding: 0 20px; /* Padding instead of margin for better responsiveness */
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex; /* Added for better centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 section {
@@ -66,7 +71,6 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* About section styles */
 #about {
     background-color: #FBECD7;
     display: flex;
@@ -104,7 +108,6 @@ h2 {
     max-width: 100%;
 }
 
-/* Film section styles */
 #film {
     background-color: #2E294E;
     display: flex;
@@ -123,7 +126,6 @@ h2 {
     position: relative;
 }
 
-/* Adapt your video-player class for YouTube */
 .video-player-container {
     width: 100%;
     aspect-ratio: 16/9;
@@ -200,7 +202,6 @@ h2 {
     background-color: #e9a718;
 }
 
-/* BTS section styles */
 #explore {
     background-color: #CFCFEA;
     text-align: center;
@@ -400,7 +401,6 @@ h2 {
     color: #2E294E;
 }
 
-/* Custom cursor */
 .cursor {
     width: 20px;
     height: 20px;
@@ -413,6 +413,7 @@ h2 {
     transition: transform 0.1s ease;
 }
 
+/* adjusting responsiveness of the screen */
 @media (max-width: 1200px) {
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -431,6 +432,7 @@ h2 {
     }
 }
 
+/* adjusting responsiveness of the screen */
 @media (max-width: 768px) {
     .team-grid {
         grid-template-columns: 1fr;
@@ -447,5 +449,24 @@ h2 {
 
     .team-member-card {
         height: 450px;
+    }
+
+    .header {
+        margin-left: 50px; /* Original margin for larger screens */
+    }
+}
+
+/* for extra small devices */
+@media only screen and (max-width: 576px) {
+    .header {
+        padding: 0 10px;
+        min-height: 100vh; /* Full height on mobile */
+        margin-left: 0; /* Remove left margin on small screens */
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .header {
+        background-attachment: fixed; /* creates parallax effect */
     }
 }

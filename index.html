@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Custom cursor -->
+    <!-- adding custom cursor -->
     <div class="cursor"></div>
 
-    <!-- top anchor for "Main" navigation link -->
+    <!-- top anchor for Main navigation link -->
     <div id="top"></div>
     <header class="header">
         <nav class="navbar">
@@ -23,7 +23,7 @@
         </nav>
     </header>
 
-    <!-- About Section -->
+    <!-- about section -->
     <section id="about">
         <h2>About the Film</h2>
         <div class="about-content">
@@ -39,12 +39,12 @@
                 </p>
             </div>
             <div class="about-image">
-                <img src="media/about.png" alt="Behind the scenes of Prom?">
+                <img src="media/about.png" alt="About"> <!-- supporting image -->
             </div>
         </div>
     </section>
 
-    <!-- Film Section -->
+    <!-- film section -->
     <section id="film">
         <h2>Watch the Film</h2>
         <div class="video-container">
@@ -69,9 +69,9 @@
         </div>
     </section>
 
-    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://www.youtube.com/iframe_api"></script> <!-- ensures the videos from youtube appear -->
 
-    <!-- BTS Section -->
+    <!-- bts section -->
     <section id="explore">
         <h2>Behind The Scenes</h2>
         <div class="bts-container">
@@ -82,11 +82,11 @@
         </div>
     </section>
 
-        <!-- Team Section (New) -->
+        <!-- team section -->
         <section id="team">
             <h2>Meet Our Team</h2>
             <div class="team-grid">
-                <!-- Team Member 1 -->
+                <!-- team member 1 -->
                 <div class="team-member-card" onclick="expandTeamMember(0)">
                     <img src="media/aigerim.png" alt="Aigerim Shakanova" class="team-member-image">
                     <div class="team-member-info">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
     
-                <!-- Team Member 2 -->
+                <!-- team member 2 -->
                 <div class="team-member-card" onclick="expandTeamMember(1)">
                     <img src="media/adeliya.jpg" alt="Adeliya Aitpayeva" class="team-member-image">
                     <div class="team-member-info">
@@ -108,7 +108,7 @@
                     </div>
                 </div>
     
-                <!-- Team Member 3 -->
+                <!-- team member 3 -->
                 <div class="team-member-card" onclick="expandTeamMember(2)">
                     <img src="media/ali.png" alt="Ali Noor" class="team-member-image">
                     <div class="team-member-info">
@@ -119,7 +119,7 @@
                     </div>
                 </div>
     
-                <!-- Team Member 4 -->
+                <!-- team member 4 -->
                 <div class="team-member-card" onclick="expandTeamMember(3)">
                     <img src="media/linuss.png" alt="Linus Jiang" class="team-member-image">
                     <div class="team-member-info">
@@ -131,7 +131,7 @@
                 </div>
             </div>
     
-            <!-- Expanded Team Member Modal -->
+            <!-- expanded team member modal when user presses it -->
             <div id="team-expanded" class="team-member-expanded">
                 <div class="team-expanded-content">
                     <img id="expanded-image" src="/api/placeholder/300/350" alt="Team member" class="expanded-image">
