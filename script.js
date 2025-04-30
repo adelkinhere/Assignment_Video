@@ -12,10 +12,10 @@
         // *** REPLACE THESE IDS WITH YOUR YOUTUBE VIDEO IDS ***
         let videoIds = {
             'intro': 'Tpp795hUaBs',          // Replace with your intro video ID
-            'choice1A': 'YOUTUBE_ID_FOR_CHOICE1A',    // Replace with your choice1A video ID
+            'choice1A': 'NFGYHb6OChc',    // Replace with your choice1A video ID
             'choice1B': 'Jb-PkjbAhiY',    // Replace with your choice1B video ID
-            'choice2A': 'YOUTUBE_ID_FOR_CHOICE2A',    // Replace with your choice2A video ID
-            'choice2B': 'YOUTUBE_ID_FOR_CHOICE2B'     // Replace with your choice2B video ID
+            'choice2A': '9L62ehS6KWw',    // Replace with your choice2A video ID
+            'choice2B': '6mHB5KweUz8'     // Replace with your choice2B video ID
         };
         
         // DOM Elements
