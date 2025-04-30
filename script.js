@@ -12,10 +12,10 @@
         // *** REPLACE THESE IDS WITH YOUR YOUTUBE VIDEO IDS ***
         let videoIds = {
             'intro': 'Tpp795hUaBs',          // Replace with your intro video ID
-            'choice1A': 'NFGYHb6OChc',    // Replace with your choice1A video ID
+            'choice1A': 'Ft0XApLsZ8g',    // Replace with your choice1A video ID
             'choice1B': 'Jb-PkjbAhiY',    // Replace with your choice1B video ID
             'choice2A': '9L62ehS6KWw',    // Replace with your choice2A video ID
-            'choice2B': '6mHB5KweUz8'     // Replace with your choice2B video ID
+            'choice2B': 'sG-BF1i0uAE'     // Replace with your choice2B video ID
         };
         
         // DOM Elements
@@ -143,7 +143,7 @@
                         name: "Aigerim Shakanova",
                         role: "Screenwriter",
                         image: "media/aigerim.png",
-                        bio: "Alex Johnson is a passionate filmmaker whose work explores the intersection of traditional narrative and interactive media. After graduating from NYU's Tisch School of the Arts, Alex directed several award-winning short films before developing a keen interest in interactive storytelling."
+                        bio: "<ul><li>First-year student at NYUAD</li><li>From Kazakhstan</li><li>Enjoys baking and dancing</li></ul>"
                     },
                     {
                         name: "Adeliya Aitpayeva",
