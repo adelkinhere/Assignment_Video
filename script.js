@@ -143,25 +143,25 @@
                         name: "Aigerim Shakanova",
                         role: "Screenwriter",
                         image: "media/aigerim.png",
-                        bio: "<ul><li>First-year student at NYUAD</li><li>From Kazakhstan</li><li>Enjoys baking and dancing</li></ul>"
+                        bio: "First-year student at NYU Abu Dhabi, originally from Kazakhstan. With a passion for creativity and cultural expression, she enjoys spending her free time baking and dancing. Whether experimenting with new dessert recipes or exploring traditional Kazakh music and movement, she brings warmth and enthusiasm to every project she’s involved in. Her interest in storytelling and visual media inspired her role as the screenwriter for this project."
                     },
                     {
                         name: "Adeliya Aitpayeva",
                         role: "Developer",
                         image: "media/adeliya.jpg",
-                        bio: "Jamie Smith brings a distinctive visual style to every project, with a particular talent for creating evocative lighting setups that enhance emotional storytelling. A graduate of the American Film Institute, Jamie has shot music videos, commercials, and short films that have screened at festivals worldwide. Jamie's work is characterized by purposeful camera movement and a mastery of both digital and analog formats. For 'Prom?', Jamie embraced the challenge of ensuring visual continuity across multiple narrative branches while maintaining a cohesive aesthetic throughout."
+                        bio: "First-year student at NYU Abu Dhabi, originally from Kazakhstan, majoring in Interactive Media. With a strong interest in storytelling through technology and design, she explores how digital tools can enhance creative expression. Outside the classroom, she enjoys dancing across a wide range of genres—from hip hop to traditional Kazakh dance—bringing both energy and cultural depth to her performances. "
                     },
                     {
                         name: "Ali Noor",
                         role: "Actor + Editor",
                         image: "media/ali.png",
-                        bio: "Sam Rodriguez specializes in cutting-edge editing techniques that push the boundaries of conventional storytelling. With a background in both film and interactive media, Sam was uniquely qualified to tackle the complex editing demands of an interactive film. After working on several major studio productions as an assistant editor, Sam established a reputation for innovative approaches to pacing and rhythm. On 'Prom?', Sam developed a custom workflow to manage the multiple narrative branches and ensure seamless transitions between choice points, creating an immersive viewing experience."
+                        bio: "Junior at NYU Abu Dhabi, majoring in Computer Engineering and Interactive Media. With a passion for bridging creativity and technology, he explores the intersection of art and robotics through hands-on projects and experimental design. His work often blends technical precision with artistic curiosity, resulting in unique creations that are both functional and expressive."
                     },
                     {
                         name: "Linus Jiang",
                         role: "Cinematographer",
                         image: "media/linus.png",
-                        bio: "Taylor Chen is an audio engineer and musician whose sound design creates immersive auditory experiences that elevate visual storytelling. With formal training in music composition and audio production, Taylor approaches film sound as both a technical and creative art form. Having worked on independent features and experimental short films, Taylor brought a wealth of experience to 'Prom?', designing distinctive soundscapes for each narrative branch while maintaining aural continuity. Taylor's innovative approach to interactive audio helps guide viewers through emotional shifts as they make choices throughout the film."
+                        bio: "Sophomore at NYU Abu Dhabi majoring in Interactive Media, with a strong interest in visual storytelling and filmmaking. As the project’s cinematographer, he demonstrated a sharp eye for framing, lighting, and movement, capturing scenes with clarity and emotional nuance. His technical skill behind the camera and creative instincts played a key role in shaping the tone and pacing of the visual narrative. "
                     }
                 ];
         
